@@ -1,4 +1,5 @@
 
+import 'package:barbeiro/pages/Formulario.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import './Dicas.dart';
@@ -22,7 +23,8 @@ class _HomeState extends State<Home> {
    children = [
      Mapa(),
   Dicas(),
-     Detalhes()
+     Detalhes(),
+     Formulario(),
    ];
   }
 
@@ -31,7 +33,8 @@ class _HomeState extends State<Home> {
     return Scaffold(
 
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.black,
+        type: BottomNavigationBarType.fixed,
+backgroundColor: Colors.blueGrey,
         currentIndex: index,
         onTap: (x){
           setState(() {
@@ -41,26 +44,38 @@ class _HomeState extends State<Home> {
         items:[
 
           BottomNavigationBarItem(
-
-            icon: new Icon(Icons.location_on, color: Colors.yellow),
+            icon: new Icon(Icons.location_on, color: Colors.white),
             title: new Text('Home', style: TextStyle(
-              color: Colors.yellow
+                color: Colors.white
             ),),
 
           ),
           BottomNavigationBarItem(
-            icon: new Icon(Icons.info, color: Colors.yellow),
+
+
+
+            icon: new Icon(Icons.info, color: Colors.white),
             title: new Text('Dicas', style: TextStyle(
-              color: Colors.yellow
+              color: Colors.white
+                  ,fontWeight: FontWeight.bold
             ),),
           ),
           BottomNavigationBarItem(
-            icon: new Icon(Icons.description, color: Colors.yellow,),
-            title: new Text('Detalhes', style: TextStyle(
-              color: Colors.yellow
+            icon: new Icon(Icons.description, color: Colors.white,),
+            title: new Text('Formulário', style: TextStyle(
+                color: Colors.white
             ),),
           ),
-        ]
+          BottomNavigationBarItem(
+
+
+            icon: new Icon(Icons.filter_vintage, color: Colors.white,),
+            title: new Text('Detalhes', style: TextStyle(
+              color: Colors.white
+            ),),
+          ),
+
+        ],
       ),
       body: children[index]
     );
