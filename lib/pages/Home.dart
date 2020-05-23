@@ -14,9 +14,11 @@ class _HomeState extends State<Home> {
   int index;
 
    List<Widget> children;
-
+List <String> titles;
   @override
   void initState() {
+
+
     // TODO: implement initState
     super.initState();
    index=0;
@@ -26,6 +28,12 @@ class _HomeState extends State<Home> {
      Detalhes(),
      Formulario(),
    ];
+   titles = [
+     "Mapa",
+     "Informações",
+     "Detalhes",
+     "Formulario"
+   ];
   }
 
   @override
@@ -34,7 +42,7 @@ class _HomeState extends State<Home> {
 
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-backgroundColor: Colors.blueGrey,
+backgroundColor: Colors.black,
         currentIndex: index,
         onTap: (x){
           setState(() {
@@ -46,6 +54,7 @@ backgroundColor: Colors.blueGrey,
           BottomNavigationBarItem(
             icon: new Icon(Icons.location_on, color: Colors.white),
             title: new Text('Home', style: TextStyle(
+            fontWeight: FontWeight.bold,
                 color: Colors.white
             ),),
 
@@ -60,24 +69,42 @@ backgroundColor: Colors.blueGrey,
                   ,fontWeight: FontWeight.bold
             ),),
           ),
-          BottomNavigationBarItem(
-            icon: new Icon(Icons.description, color: Colors.white,),
-            title: new Text('Formulário', style: TextStyle(
-                color: Colors.white
-            ),),
-          ),
+
           BottomNavigationBarItem(
 
 
             icon: new Icon(Icons.filter_vintage, color: Colors.white,),
             title: new Text('Detalhes', style: TextStyle(
-              color: Colors.white
+                color: Colors.white,
+              fontWeight: FontWeight.bold,
             ),),
           ),
 
+          BottomNavigationBarItem(
+            icon: new Icon(Icons.description, color: Colors.white,),
+            title: new Text('Formulário', style: TextStyle(
+                color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),),
+          ),
+
+
         ],
       ),
+      appBar: AppBar(
+        backgroundColor: Colors.green[800],
+        title: Text(titles[index], style: TextStyle(
+            color: Colors.black,
+            fontWeight: FontWeight.bold
+        ),),
+
+      ),
+drawer: Drawer(
+
+),
       body: children[index]
+        ,
+
     );
   }
 }
@@ -86,9 +113,7 @@ class Mapa extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Inicio"),
-      ),
+
       body: Container(
         child: Center(
           child: Text("Aqui ficará o mapa!"),

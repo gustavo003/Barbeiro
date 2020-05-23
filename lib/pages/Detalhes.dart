@@ -6,9 +6,7 @@ class Detalhes extends StatelessWidget {
 
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Detalhes"),
-      ),
+
       body:Container(
         color: Colors.red,
       ),

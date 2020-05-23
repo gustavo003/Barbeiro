@@ -4,14 +4,7 @@ class Dicas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.yellow,
-          title: Text("Informações", style: TextStyle(
-            color: Colors.black,
-            fontWeight: FontWeight.bold
-          ),),
-          centerTitle: true,
-        ),
+
         body: Body()
     )
     ;
@@ -24,7 +17,7 @@ class Dicas extends StatelessWidget {
       return Container(
 
         decoration: BoxDecoration(
-         color: Colors.white70
+         color: Colors.grey[200]
 ,
         ),
         child: Center(
@@ -38,14 +31,9 @@ class Dicas extends StatelessWidget {
         margin: EdgeInsets.only(top:100, left: 10, right: 10),
 
 decoration: BoxDecoration(
-  gradient: LinearGradient(
-      begin: Alignment.topLeft,
-      end: Alignment.bottomRight,
-      colors: [Colors.white, Colors.white]
-  ),
+
 
   borderRadius: BorderRadius.circular(40),
-  border: Border.all(color: Colors.grey[800])
 
 ),
 
@@ -54,14 +42,14 @@ decoration: BoxDecoration(
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              Elemento('images/pedrinho.jpg', "Precauções", x:1),
-                              Elemento('images/pedrinho.jpg', "Primeiros \nsocorros", x:1),
+                              Elemento('images/pato.jpg', "Precauções", x:1),
+                              Elemento('images/cachorro.jpg', "Primeiros \nsocorros", x:1),
                             ],
                           ),  Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              Elemento('images/pedrinho.jpg', "Emergência"),
-                              Elemento('images/pedrinho.jpg', "Sintomas"),
+                              Elemento('images/gaivota.jpg', "Emergência"),
+                              Elemento('images/gato.jpg', "Sintomas"),
                             ],
 
                           ),
@@ -69,23 +57,27 @@ decoration: BoxDecoration(
                       )
                     ),
 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
+
                       Container(
 
-                          decoration: BoxDecoration(
 
-                              color: Colors.white,
-                            borderRadius: BorderRadius.circular(10)
-                          ),
-                          margin: EdgeInsets.only(top:82),
-                          child: Text('Dicas', style: TextStyle(fontSize: 25
+                          margin: EdgeInsets.only(top:92, right: 5, left: 5),
+                          padding: EdgeInsets.only(left:40, right: 5),
+                          child: Row(
+                            children: <Widget>[
+                              Icon(Icons.info, color: Colors.black),
+SizedBox(
+  width: 7,
+),
+                              Text('Dicas', style: TextStyle(fontSize: 22,
+                                  color: Colors.black
 
-                              ,fontWeight: FontWeight.bold
-                          ),)),
-                    ],
-                  ),
+                                  ,fontWeight: FontWeight.bold
+                              ),),
+                            ],
+                          )),
+
+
 
                 ],
               ),
@@ -130,16 +122,16 @@ decoration: BoxDecoration(
 
       return Container(
 
-        margin: EdgeInsets.only(left:10, right:10, top:x==null?0:35, bottom: x==null?25:10)
+        margin: EdgeInsets.only(left:5, right:5, top:x==null?0:35, bottom: x==null?25:10)
         ,
-        padding: EdgeInsets.only(top:19),
+        padding: EdgeInsets.only(top:15),
         height: 180,
 
         width: 170,
         decoration: BoxDecoration(
 borderRadius: BorderRadius.circular(20),
-            color: Colors.yellow[300],
-            border: Border.all(color: Colors.white)
+            color: Color.fromARGB(100, 0, 60, 30),
+
         ),
 
         child: Column(
@@ -160,7 +152,7 @@ borderRadius: BorderRadius.circular(20),
             ),
             Center(
               child: Text(cont, style: TextStyle(
-                color: Colors.black,
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontSize: 15
               ),),

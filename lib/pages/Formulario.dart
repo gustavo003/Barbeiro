@@ -6,9 +6,8 @@ class Formulario extends StatelessWidget {
 
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Formulario"),
-      ),
+
+
       body:Container(
         color: Colors.red,
       ),
