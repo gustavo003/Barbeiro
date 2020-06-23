@@ -32,7 +32,7 @@ List <String> titles;
      "Mapa",
      "Informações",
      "Detalhes",
-     "Formulario"
+     "Questionários"
    ];
   }
 
@@ -53,7 +53,7 @@ backgroundColor: Colors.black,
 
           BottomNavigationBarItem(
             icon: new Icon(Icons.location_on, color: Colors.white),
-            title: new Text('Home', style: TextStyle(
+            title: new Text('Mapa', style: TextStyle(
             fontWeight: FontWeight.bold,
                 color: Colors.white
             ),),
@@ -82,7 +82,7 @@ backgroundColor: Colors.black,
 
           BottomNavigationBarItem(
             icon: new Icon(Icons.description, color: Colors.white,),
-            title: new Text('Formulário', style: TextStyle(
+            title: new Text('Questionários', style: TextStyle(
                 color: Colors.white,
               fontWeight: FontWeight.bold,
             ),),
@@ -92,7 +92,7 @@ backgroundColor: Colors.black,
         ],
       ),
       appBar: AppBar(
-        backgroundColor: Colors.green[800],
+        backgroundColor: Colors.red,
         title: Text(titles[index], style: TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.bold

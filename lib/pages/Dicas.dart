@@ -1,3 +1,7 @@
+import 'package:barbeiro/pages/Emergencia.dart';
+import 'package:barbeiro/pages/Prec.dart';
+import 'package:barbeiro/pages/Sintomas.dart';
+import 'package:barbeiro/pages/Socorros.dart';
 import 'package:flutter/material.dart';
 
 class Dicas extends StatelessWidget {
@@ -5,30 +9,31 @@ class Dicas extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
 
-        body: Body()
+        body: Body(context)
     )
     ;
   }
 
 
 
-  Body(){
+  Body(context){
 
-      return Container(
 
-        decoration: BoxDecoration(
-         color: Colors.grey[200]
+        return Container(
+
+          decoration: BoxDecoration(
+           color: Colors.brown
 ,
-        ),
-        child: Center(
+          ),
+          child: Center(
 
-          child: Column(
-            children: <Widget>[
+            child: Column(
+              children: <Widget>[
 
-              Stack(
-                children: <Widget>[
-                   Container(
-        margin: EdgeInsets.only(top:100, left: 10, right: 10),
+                Stack(
+                  children: <Widget>[
+                     Container(
+          margin: EdgeInsets.only(top:100, left: 10, right: 10),
 
 decoration: BoxDecoration(
 
@@ -37,55 +42,72 @@ decoration: BoxDecoration(
 
 ),
 
-                      child: Column(
-                        children: <Widget>[
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: <Widget>[
-                              Elemento('images/pato.jpg', "Precauções", x:1),
-                              Elemento('images/cachorro.jpg', "Primeiros \nsocorros", x:1),
-                            ],
-                          ),  Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: <Widget>[
-                              Elemento('images/gaivota.jpg', "Emergência"),
-                              Elemento('images/gato.jpg', "Sintomas"),
-                            ],
+                        child: Column(
+                          children: <Widget>[
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: <Widget>[
+                                Elemento('images/pato.jpg', "Precauções", (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                                    return Prec();
+                                  }));
+                                }, x:1),
+                                Elemento('images/cachorro.jpg', "Primeiros \nsocorros",(){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                                    return Socorros();
+                                  }));
+                                }, x:1),
+                              ],
+                            ),  Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: <Widget>[
+                                Elemento('images/gaivota.jpg', "Emergência",(){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                                    return Emergencia();
+                                  }));
+                                },),
+                                Elemento('images/gato.jpg', "Sintomas", (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                                    return Sintomas();
+                                  }));
+                                },),
+                              ],
 
-                          ),
-                        ],
-                      )
-                    ),
+                            ),
+                          ],
+                        )
+                      ),
 
 
-                      Container(
+                        Container(
 
 
-                          margin: EdgeInsets.only(top:92, right: 5, left: 5),
-                          padding: EdgeInsets.only(left:40, right: 5),
-                          child: Row(
-                            children: <Widget>[
-                              Icon(Icons.info, color: Colors.black),
+                            margin: EdgeInsets.only(top:92, right: 5, left: 5),
+                            padding: EdgeInsets.only(left:40, right: 5),
+                            child: Row(
+                              children: <Widget>[
+                                Icon(Icons.info, color: Colors.black),
 SizedBox(
   width: 7,
 ),
-                              Text('Dicas', style: TextStyle(fontSize: 22,
-                                  color: Colors.black
+                                Text('Dicas', style: TextStyle(fontSize: 22,
+                                    color: Colors.black
 
-                                  ,fontWeight: FontWeight.bold
-                              ),),
-                            ],
-                          )),
+                                    ,fontWeight: FontWeight.bold
+                                ),),
+                              ],
+                            )),
 
 
 
-                ],
-              ),
+                  ],
+                ),
 
-            ],
+              ],
+            ),
           ),
-        ),
-      );
+        );
+
 
   }
 
@@ -118,46 +140,49 @@ SizedBox(
     );
   }
 
-  Elemento(imagem, String cont, {x}){
+  Elemento(imagem, String cont, func, {x}){
 
-      return Container(
+      return GestureDetector(
+onTap: func,
+        child: Container(
 
-        margin: EdgeInsets.only(left:5, right:5, top:x==null?0:35, bottom: x==null?25:10)
-        ,
-        padding: EdgeInsets.only(top:15),
-        height: 180,
+          margin: EdgeInsets.only(left:5, right:5, top:x==null?0:35, bottom: x==null?25:10)
+          ,
+          padding: EdgeInsets.only(top:15),
+          height: 180,
 
-        width: 170,
-        decoration: BoxDecoration(
+          width: 180,
+          decoration: BoxDecoration(
 borderRadius: BorderRadius.circular(20),
-            color: Color.fromARGB(100, 0, 60, 30),
+              color: Colors.white70
 
-        ),
-
-        child: Column(
-          children: <Widget>[
-          Container(
-            width: 100,
-            height: 100,
-        decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              image: DecorationImage(
-                fit: BoxFit.fill,
-                image: AssetImage(imagem)
-              )
-            ),
           ),
-            SizedBox(
-              height: 10,
+
+          child: Column(
+            children: <Widget>[
+            Container(
+              width: 100,
+              height: 100,
+          decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: AssetImage(imagem)
+                )
+              ),
             ),
-            Center(
-              child: Text(cont, style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 15
-              ),),
-            )
-          ],
+              SizedBox(
+                height: 10,
+              ),
+              Center(
+                child: Text(cont, style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15
+                ),),
+              )
+            ],
+          ),
         ),
       );
 
@@ -165,16 +190,4 @@ borderRadius: BorderRadius.circular(20),
 
 
 }
-
-
-class CenterHorizontal extends StatelessWidget {
-
-  CenterHorizontal(this.child);
-  final Widget child;
-
-  @override
-  Widget build(BuildContext context) =>
-      Row(mainAxisAlignment: MainAxisAlignment.center,children: [child]);
-}
-
 
