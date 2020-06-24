@@ -132,6 +132,108 @@ Barbeiros(){
 
     },
 
+    {
+      "nome":"images/panstrongylus_lenti.jpg",
+      "latim":"Panstrongylus lenti",
+      "Diagnose":"Lobo anterior do pronoto marrom claro, sem "
+    "manchas; processo do escutelo alongado, cilíndrico e "
+          "afilado na ponta.",
+      "Tamanho":"19",
+      "Habitat": "Silvestre (área de cerrado, arbustiva, seca)..",
+
+
+    },
+    {
+      "nome":"images/panstrongylus_lignarius.jpg",
+      "latim":"panstrongylus lignarius",
+
+      "Diagnose":"Coloração geral amarelada a marrom "
+    "amarelada com marcas escuras; terceiro segmento "
+    "antenal tão longo quanto o segundo; escutelo preto "
+    "com uma listra amarela longitudinal mediana; "
+    "processo do escutelo curto, arredondado, cônico ou "
+    "truncado na ponta; segmentos do conexivo com "
+          "mancha escura na parte anterior.",
+      "Tamanho":"20,5 – 31",
+      "Habitat": "Silvestre (palmeiras, ocos e copas de árvores, "
+    "ninhos de tucanos, e bromélias), peridomicílio "
+          "(galinheiros) e domicílio ocasionalmente.",
+
+
+    },
+
+    {
+      "nome":"images/panstrongylus_lutzi.jpg",
+      "latim":"Panstrongylus lutzi",
+      "Diagnose":"Coloração geral marrom clara com pequenas "
+    "marcas marrom escuras; rostro com segundo "
+    "segmento mais longo que o primeiro; lobo anterior "
+    "do pronoto com marcas escuras e tubérculo discal "
+    "evidente; processo do escutelo alongado, cilíndrico e"
+    "afilado na ponta; asa anterior com cório tão escuro "
+    "quanto a membrana, com a base e o ápice mais "
+    "claros; fêmures anteriores e medianos com espinhos.",
+      "Tamanho":"24 – 29",
+      "Habitat": "silvestre (tocas de tatus, rochas habitadas por "
+          "mocós), peridomicílio (galinheiros) e domicílio.",
+
+
+    },
+
+    {
+      "nome":"images/panstrongylus_megistus.jpg",
+      "latim":"Panstrongylus megistus",
+      "Diagnose":"Coloração geral preta com marcas vermelhas; "
+    "tubérculos do lobo anterior do pronoto raramente "
+    "avermelhados; superfície dorsal do corpo quase sem "
+    "pelos; terceiro segmento da antena mais curto que o "
+    "segundo; processo do escutelo curto, arredondado, "
+    "cônico ou truncado na ponta; segmentos do "
+    "conexivo com mancha escura na parte anterior.",
+      "Tamanho":"26 – 38",
+      "Habitat": "silvestre (palmeiras, tocas de animais), "
+          "peridomicílio e domicílio.",
+
+    },
+    {
+      "nome":"images/panstrongylus_rufotuberculatus.jpg",
+      "latim":"Panstrongylus rufotuberculatus",
+
+    "Diagnose":  "Corpo com cerdas douradas na superfície "
+    "dorsal; lobo anterior do pronoto com tubérculos "
+    "avermelhados; processo do escutelo curto, "
+    "arredondado, cônico ou truncado na ponta; "
+    "segmentos do conexivo com mancha escura no "
+          "centro; asas anteriores verde claras.",
+      "Tamanho":"24 – 28",
+      "Habitat": "Silvestre (palmeiras, árvores e refúgio de "
+    "mamíferos), eventualmente em peridomicílio e "
+          "domicílio.",
+
+
+    },
+    {
+      "nome":"images/panstrongylus_tupynambai.jpg",
+      "latim":"Panstrongylus tupynambai",
+      "Diagnose":"Rostro com segundo segmento tão longo ou "
+    "mais curto que o primeiro; lobo anterior do pronoto "
+    "com marcas escuras; processo do escutelo alongado, "
+          "cilíndrico e afilado na ponta.",
+
+      "Tamanho":"22 – 25",
+      "Habitat": "silvestre (pedregais, refúgios de roedores e "
+    "répteis), ocasionalmente em peridomicílio e "
+          "domicílio.",
+
+
+    },
+
+
+
+
+
+
+
 
   ];
 
