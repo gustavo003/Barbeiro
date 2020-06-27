@@ -227,6 +227,269 @@ Barbeiros(){
 
 
     },
+    {
+      "nome":"images/parabelminus_carioca.jpg",
+      "latim":"Parabelminus carioca",
+      "Diagnose":"Cabeça alargada; ângulos anterolaterais do "
+          "pronoto agudos; lados do pronoto quase retos.",
+
+      "Tamanho":"9 – 10",
+      "Habitat": "silvestre (palmeiras e associados a refúgios de "
+          "marsupiais).",
+
+
+    },
+    {
+      "nome":"images/parabelminus_yurupucu.jpg",
+      "latim":"Parabelminus yurupucu",
+      "Diagnose":"Cabeça delgada; ângulos anterolaterais do "
+    "pronoto arredondados; lados do pronoto formando "
+          "ângulos distintos.",
+
+      "Tamanho":"8 – 9,7",
+      "Habitat": "Silvestre (bromélias e tronco de árvores com "
+    "ninhos de roedores associada com Triatoma "
+          "tibiamaculata e Rhodnius domesticus).",
+
+
+    },
+
+
+    {
+      "nome":"images/psammolestes_coreodes.jpg",
+      "latim":"Psammolestes coreodes",
+      "Diagnose":"Cabeça, incluindo os olhos, com "
+    "comprimento igual ou pouco menor que a largura, "
+    "com declive acentuado atrás dos ocelos; ângulos "
+          "anterolaterais do pronoto acuminados.",
+
+      "Tamanho":"12 – 15",
+      "Habitat": "Silvestre (ninho de aves; sob casca de árvores).",
+
+
+    },
+
+
+    {
+      "nome":"images/psammolestes_tertius.jpg",
+      "latim":"Psammolestes tertius",
+      "Diagnose":"Cabeça, incluindo os olhos, pouco mais longa "
+    "que larga, com declive moderado atrás dos ocelos; "
+    "ângulos anterolaterais do pronoto muito curtos e "
+          "obtusos.",
+
+      "Tamanho":"11,5 – 13,5",
+      "Habitat": "Silvestre (ninho de aves).",
+
+
+    },
+
+
+    {
+      "nome":"images/rhodnius_amazonicus.jpg",
+      "latim":"Rhodnius amazonicus",
+      "Diagnose":"cabeça, incluindo os olhos, pouco mais longa "
+    "que larga, com declive moderado atrás dos ocelos; "
+    "ângulos anterolaterais do pronoto muito curtos e "
+          "obtusos.",
+
+      "Tamanho":"16,5 – 17",
+      "Habitat": "desconhecido.",
+
+
+    },
+
+    {
+      "nome":"images/rhodnius_brethesi.jpg",
+      "latim":"Rhodnius brethesi",
+      "Diagnose":"coloração da cabeça e pernas sem aspecto "
+    "sarapintado; cabeça nitidamente mais longa que o "
+    "pronoto; terceiro segmento da antena mais longo que "
+    "o segundo; segundo segmento do rostro não "
+    "alcançando a margem posterior da cabeça; lobo "
+    "posterior do pronoto uniformemente preto entre as "
+    "carenas submedianas; pernas sem manchas ou anéis "
+    "escuros; fêmures anteriores delgados; conexivo claro "
+    "com manchas retangulares escuras.",
+
+      "Tamanho":"19 – 20",
+      "Habitat": "Silvestre (paineiras).",
+
+
+    },
+
+
+    {
+      "nome":"images/rhodnius_domesticus.jpg",
+      "latim":"Rhodnius domesticus",
+      "Diagnose":"coloração da cabeça e pernas sem aspecto "
+    "sarapintado; cabeça tão comprida ou pouco mais "
+    "longa que o pronoto; lobo posterior do pronoto "
+    "com duas faixas longitudinais escuras e uma clara "
+    "entre as carenas submedianas; pernas sem manchas "
+    "ou anéis escuros; fêmures anteriores delgados; "
+    "conexivo claro com manchas retangulares escuras.",
+
+      "Tamanho":"15 – 18",
+      "Habitat": "Silvestre (bromélias, refúgios de roedores e "
+          "marsupiais, ocos de árvores, e embaixo de cascas)",
+
+
+    },
+
+
+    {
+      "nome":"images/rhodnius_milesi.jpg",
+      "latim":"Rhodnius milesi",
+      "Diagnose":"coloração da cabeça e pernas sem aspecto "
+    "sarapintado; cabeça mais longa que o pronoto; "
+    "segundo segmento do rostro alcançando a margem "
+    "posterior da cabeça; lobo posterior do pronoto com "
+    "duas faixas longitudinais escuras e uma clara entre "
+    "as carenas submedianas; pernas sem manchas ou "
+    "anéis escuros; fêmures anteriores delgados; "
+    "conexivo claro com manchas retangulares escuras.",
+
+      "Tamanho":"20",
+      "Habitat": "Silvestre (palmeiras).",
+
+
+    },
+
+
+    {
+      "nome":"images/rhodnius_montenegrensis.jpg",
+      "latim":"Rhodnius montenegrensis",
+      "Diagnose":"coloração geral amarelada, sem aspecto "
+    "sarapintado na cabeça e pernas; cabeça nitidamente "
+    "mais longa que o pronoto; segundo segmento do "
+    "rostro não alcançando a margem posterior da cabeça; "
+    "ângulos anterolaterais do pronoto arredondados; "
+    "lobo posterior do pronoto com duas faixas "
+    "longitudinais escuras e uma clara entre as carenas "
+    "submedianas, sendo as faixa escuras separadas "
+    "anteriormente; pernas sem manchas ou anéis "
+    "escuros; conexivo claro com manchas retangulares "
+    "escuras; ventre do abdome longitudinalmente com "
+    "pequenas marcas amarelas interpostas com outras "
+    "mais escuras.",
+
+      "Tamanho":"20",
+      "Habitat": "Silvestre (palmeiras)",
+
+
+    },
+
+
+    {
+      "nome":"images/rhodnius_nasutus.jpg",
+      "latim":"Rhodnius nasutus",
+      "Diagnose":"Coloração geral do corpo marrom "
+    "avermelhada, sem sarapintado na cabeça e pernas; "
+    "cabeça nitidamente mais longa que o pronoto; "
+    "terceiro segmento da antena com porção basal clara "
+    "e apical escura, mais curto que o segundo; segundo "
+    "segmento do rostro não alcançando a margem "
+    "posterior da cabeça; ângulos anterolaterais do "
+    "pronoto projetados anteriormente; lobo posterior do "
+    "pronoto com duas faixas longitudinais escuras e uma "
+    "clara entre as carenas submedianas, sendo as faixas "
+    "escuras confluentes anteriormente; pernas sem "
+    "manchas ou anéis escuros; trocânteres e fêmures de "
+    "mesma cor; fêmures anteriores delgados; conexivo "
+    "claro com manchas retangulares escuras fracas.",
+
+      "Tamanho":"12,5 – 18",
+      "Habitat": "Silvestre, peridomicílio "
+          "eventualmente em domicílios. e (galinheiros) ",
+
+
+    },
+
+    {
+      "nome":"images/rhodnius_neglectus.jpg",
+      "latim":"Rhodnius neglectus",
+      "Diagnose":"Coloração geral do corpo marrom escura, "
+    "sem aspecto sarapintado e pernas; cabeça "
+    "nitidamente mais longa que o pronoto; terceiro "
+    "segmento da antena com porção basal escura e "
+    "apical clara, mais curto que o segundo; segundo "
+    "segmento do rostro não alcançando a margem "
+    "posterior da cabeça; ângulos anterolaterais do "
+    "pronoto projetados anteriormente; lobo posterior do "
+    "pronoto com duas faixas longitudinais escuras e uma "
+    "clara entre as carenas submedianas, sendo as faixas "
+    "escuras confluentes anteriormente; pernas sem "
+    "manchas ou anéis escuros; trocânteres mais claros "
+    "que os fêmures; fêmures anteriores delgados; "
+    "conexivo claro com manchas retangulares escuras "
+    "bem delimitadas.",
+
+      "Tamanho":"17,5 – 20,50",
+      "Habitat": "predominantemente silvestre (palmeiras e ninhos), peridomicílio e domicílio. ",
+
+
+    },
+
+    {
+      "nome":"images/rhodnius_paraensis.jpg",
+      "latim":"Rhodnius paraensis",
+      "Diagnose":"Coloração da cabeça e pernas sem aspecto "
+    "sarapintado; fêmures e tíbias com manchas e anéis "
+          "escuros; fêmures anteriores relativamente grossos.",
+
+      "Tamanho":"10,5 – 12",
+      "Habitat": "Silvestre (refúgio de roedores). ",
+
+
+    },
+
+    {
+      "nome":"images/rhodnius_pictipes.jpg",
+      "latim":"Rhodnius paraensis",
+      "Diagnose":"Cabeça e pernas sarapintadas, com coloração "
+    "constituída por pequenas manchas e pontos "
+    "irregulares; cabeça alongada, com região anteocular "
+    "pelo menos 2,7 vezes mais longa que a pós-ocular; "
+    "cório marrom, irregularmente coberto por marcas "
+    "pretas; todas as tíbias com anel preto mediano.",
+
+      "Tamanho":"18 – 22",
+      "Habitat": "silvestre (palmeiras e bromélias) e domicílio "
+          "(invasor). ",
+
+
+    },
+
+    {
+      "nome":"images/rhodnius_robustus.jpg",
+      "latim":"Rhodnius robustus",
+      "Diagnose":"coloração geral do corpo âmbar, sem aspecto "
+    "sarapintado na e pernas; cabeça nitidamente mais "
+    "longa que o pronoto; segundo segmento do rostro "
+    "não alcançando a margem posterior da cabeça; "
+    "ângulos anterolaterais do pronoto arredondados; "
+    "lobo posterior do pronoto com duas faixas "
+   "longitudinais escuras e uma clara entre as carenas "
+    "submedianas, as faixas escuras separadas "
+    "anteriormente; pernas sem manchas ou escuros; "
+    "conexivo claro com manchas retangulares escuras; "
+    "ventre do sem marcas amarelas interpostas com "
+    "outras mais escuras.",
+
+      "Tamanho":"20 – 26",
+      "Habitat": "silvestre (palmeiras), "
+          "eventualmente em domicílio. "
+
+
+
+    },
+
+
+
+
+
+
 
 
 
