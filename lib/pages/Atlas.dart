@@ -165,7 +165,45 @@ Container(
 
           }),
 
+      Especie(barbeiros[30]["nome"], barbeiros[30]["latim"], barbeiros[31]["nome"], barbeiros[31]["latim"], (){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>Info(barbeiro:barbeiros[30])));
+      },
+              (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>Info(barbeiro:barbeiros[31])));
 
+          }),
+
+      Especie(barbeiros[32]["nome"], barbeiros[32]["latim"], barbeiros[33]["nome"], barbeiros[33]["latim"], (){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>Info(barbeiro:barbeiros[32])));
+      },
+              (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>Info(barbeiro:barbeiros[33])));
+
+          }),
+
+      Especie(barbeiros[34]["nome"], barbeiros[34]["latim"], barbeiros[35]["nome"], barbeiros[35]["latim"], (){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>Info(barbeiro:barbeiros[34])));
+      },
+              (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>Info(barbeiro:barbeiros[35])));
+
+          }),
+
+      Especie(barbeiros[36]["nome"], barbeiros[36]["latim"], barbeiros[37]["nome"], barbeiros[37]["latim"], (){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>Info(barbeiro:barbeiros[36])));
+      },
+              (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>Info(barbeiro:barbeiros[37])));
+
+          }),
+
+      Especie(barbeiros[38]["nome"], barbeiros[38]["latim"], barbeiros[39]["nome"], barbeiros[39]["latim"], (){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>Info(barbeiro:barbeiros[38])));
+      },
+              (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>Info(barbeiro:barbeiros[39])));
+
+          }),
     ],
   ),
 )

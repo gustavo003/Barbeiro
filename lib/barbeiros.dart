@@ -446,7 +446,7 @@ Barbeiros(){
 
     {
       "nome":"images/rhodnius_pictipes.jpg",
-      "latim":"Rhodnius paraensis",
+      "latim":"Rhodnius pictipes",
       "Diagnose":"Cabeça e pernas sarapintadas, com coloração "
     "constituída por pequenas manchas e pontos "
     "irregulares; cabeça alongada, com região anteocular "
@@ -487,13 +487,196 @@ Barbeiros(){
 
 
 
+    {
+      "nome":"images/rhodnius_stali.jpg",
+      "latim":"Rhodnius stali",
+      "Diagnose":"Cabeça e pernas sarapintadas, com coloração "
+    "constituída por pequenas manchas e pontos "
+    "irregulares; cabeça alongada, com região anteocular "
+    "até 2,5 vezes mais longa que a pós-ocular; cório "
+          "marrom, irregularmente coberto por marcas pretas.",
+
+      "Tamanho":"16,5 – 17",
+      "Habitat": "Silvestre",
+
+
+    },
+
+    {
+      "nome":"images/rhodnius_zeledoni.jpg",
+      "latim":"Rhodnius zeledoni",
+      "Diagnose":"coloração da cabeça e pernas sem aspecto "
+    "sarapintado; cabeça nitidamente mais longa que o "
+    "pronoto; segundo segmento do rostro não "
+    "alcançando a margem posterior da cabeça; ângulos "
+    "anterolaterais do pronoto arredondados; lobo "
+    "posterior do pronoto com duas faixas longitudinais "
+    "escuras e uma clara entre as carenas submedianas, "
+    "sendo a faixas escuras separadas anteriormente; "
+    "fêmures sem manchas ou anéis escuros; tíbias "
+    "anteriores e medianas castanho escuras, posterior "
+    "marrom clara com anel apical escuro.",
+
+      "Tamanho":"13",
+      "Habitat": "desconhecido.",
+
+
+    },
+
+
+    {
+      "nome":"images/triatoma_arthurneivai.jpg",
+      "latim":"Triatoma arthurneivai",
+      "Diagnose":"Cabeça de comprimento igual ou menor ao "
+    "do pronoto; genas nitidamente ultrapassando o ápice "
+    "do clípeo; pronoto de colorido escuro uniforme, sem "
+    "tubérculos discais ou coriais no lobo anterior; quase "
+    "totalmente escuro; membrana, parte apical do clavo "
+    "e pequena porção do cório enfumaçados; fêmures e "
+    "tíbias inteiramente escuros.",
+
+      "Tamanho":"19,5 – 22",
+      "Habitat": "Silvestre (em pedras, associados a pequenos "
+          "roedores).",
+
+
+    },
 
 
 
 
 
 
+    {
+      "nome":"images/triatoma_baratai.jpg",
+      "latim":"Triatoma baratai",
+      "Diagnose":"cabeça mais longa que o pronoto; primeiro "
+    "segmento da antena curto, não atingindo o ápice do "
+    "clípeo; terceiro segmento do rostro mais curto que o "
+    "segundo; cório amarelado ou alaranjado com veias "
+    "escuras; membrana esfumaçada, amarelada; pernas "
+    "pretas; fêmures anteriores e medianos com pequenos "
+    "tubérculos; conexivo totalmente amarelo pálido, "
+    "sendo a sutura intersegmentar escura visível somente "
+    "no ventre.",
 
+      "Tamanho":"25",
+      "Habitat": "Silvestre.",
+
+
+    },
+
+    {
+      "nome":"images/triatoma_brasiliensis.jpg",
+      "latim":"Triatoma brasiliensis",
+      "Diagnose":"Primeiro segmento da antena atingindo o "
+    "ápice do clípeo; pronoto marrom com um par de "
+    "manchas amarelas sobre as carenas longitudinais "
+    "estendendo-se sobre os lobos anterior e posterior; "
+    "coxas escuras; trocânteres amarelos; fêmures com "
+    "base escura, claros próximo do centro, usualmente "
+    "anelados; tíbias com anelação clara perto do ápice",
+
+      "Tamanho":"22 – 25,5",
+      "Habitat": "Silvestre, peridomicílio e domicílio.",
+
+
+    },
+
+    {
+      "nome":"images/triatoma_carcavalloi.jpg",
+      "latim":"Triatoma carcavalloi",
+      "Diagnose":"Coloração geral preta com manchas laranja "
+    "avermelhadas no lobo posterior do pronoto, quase "
+    "todo o cório e parte da membrana; cabeça mais "
+    "longa que o pronoto; primeiro segmento da antena "
+    "curto, não atingindo o ápice do clípeo; terceiro "
+    "segmento do rostro mais curto que o segundo; lobo "
+    "anterior do pronoto com tubérculos discais bem "
+    "desenvolvidos; fêmures e tíbias inteiramente "
+    "escuros; conexivo laranja avermelhado com faixas "
+    "negras transversais envolvendo as suturas "
+    "intersegmentares.",
+
+      "Tamanho":"20 – 22",
+      "Habitat": "Silvestre, peridomicílio e domicílio.",
+    },
+
+    {
+      "nome":"images/triatoma_circummaculata.jpg",
+      "latim":"Triatoma circummaculata",
+      "Diagnose":"Coloração geral marrom escura a preta com "
+    "marcas vermelhas; cabeça mais longa que o pronoto; "
+    "primeiro segmento da antena curto, não atingindo o "
+    "ápice do clípeo; terceiro segmento do rostro "
+    "aproximadamente tão longo quanto o segundo; "
+    "fêmures e tíbias inteiramente escuros.",
+
+      "Tamanho":"15 – 17",
+      "Habitat": "Silvestre (em baixo de pedras e rochas, refúgio "
+    "de roedores), e ocasionalmente no peridomicílio e "
+          "peridomicílio.",
+
+
+    },
+
+    {
+      "nome":"images/triatoma_costalimai.jpg",
+      "latim":"Triatoma costalimai",
+      "Diagnose":"Coloração geral preta com marcas alaranjadas "
+    "no conexivo; cabeça mais longa que o pronoto; "
+    "primeiro segmento da antena curto, não atingindo o "
+    "ápice do clípeo; terceiro segmento do rostro mais que "
+    "o segundo; cório preto com manchas avermelhadas ou "
+    "alaranjadas; conexivo preto com contorno externo "
+    "alaranjado; fêmures e tíbias inteiramente escuros.",
+
+      "Tamanho":"25,5 – 26-,5",
+      "Habitat": "silvestre (refúgio de roedores e pedras "
+          "calcáreas), e ocasionalmente no peridomicílio",
+
+
+    },
+
+    {
+      "nome":"images/triatoma_deaneorum.jpg",
+      "latim":"Triatoma deaneorum",
+      "Diagnose":"cabeça mais longa que o pronoto; primeiro "
+    "segmento da antena curto, não atingindo o ápice do "
+    "clípeo; pronoto inteiramente preto; coxas e maior "
+    "parte dos fêmures escuros; trocânteres e base dos "
+    "fêmures amarelos; tíbias uniformemente escuras; "
+    "marcas escuras dos conexivos com aspecto similar "
+    "ao de notas musicais.",
+
+      "Tamanho":"25",
+      "Habitat": "Domicílio.",
+
+
+    },
+
+
+
+    {
+      "nome":"images/triatoma_delpontei.jpg",
+      "latim":"Triatoma delpontei",
+      "Diagnose":"Corpo não distintamente piloso; cabeça tão "
+    "longa quanto o pronoto; primeiro segmento da "
+    "antena curto, não atingindo o ápice do clípeo; "
+    "terceiro segmento do rostro no mínimo tão longo "
+    "quanto o primeiro; pronoto com lobo anterior "
+    "marrom escuro e lobo posterior alaranjado; células "
+    "da membrana marrom claras com manchas "
+    "irregulares mais escuras; tíbias posteriores com "
+    "pelos longos, facilmente visíveis sem aumento.",
+
+      "Tamanho":"24 – 27",
+      "Habitat": "Silvestre (ninhos de aves habitados por "
+    "marsupiais ou roedores), e ocasionalmente "
+          "peridomicílio e domicílio.",
+
+
+    },
 
 
 
