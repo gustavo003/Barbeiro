@@ -1,9 +1,15 @@
 
+//import 'dart:html';
+
 import 'package:barbeiro/pages/Formulario.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import './Dicas.dart';
 import 'Detalhes.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'dart:async';
+import 'package:geolocator/geolocator.dart';
+
 class Home extends StatefulWidget {
 
   @override
@@ -11,6 +17,9 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+
+
   int index;
 
    List<Widget> children;
@@ -109,16 +118,181 @@ drawer: Drawer(
   }
 }
 
-class Mapa extends StatelessWidget {
+
+
+
+
+
+
+class Mapa extends StatefulWidget {
+
+  @override
+  _MapaState createState() => _MapaState();
+}
+
+class _MapaState extends State<Mapa> {
+  Completer<GoogleMapController> _controller = Completer();
+
+Set<Marker> marcadores = {};
+Position position;
+
+
+CameraPosition camerapos =  CameraPosition(target: LatLng(-23.562436, 24.462436)
+    ,
+  zoom: 19,);
+
+
+
+/*carregar(){
+
+  Set<Marker> marcador = {};
+
+Marker marker = Marker(
+
+  markerId: MarkerId('marcador'),
+  position: LatLng(51.512876, -0.088143),
+    infoWindow: InfoWindow(
+    title: "Stetson"
+),
+);
+  Marker marker2 = Marker(
+
+      markerId: MarkerId('marcadorr'),
+      position: LatLng(71.512876, -2.088143)
+  );
+marcador.add(marker);
+marcador.add(marker2);
+
+setState(() {
+  marcadores = marcador;
+});
+
+}
+*/
+
+
+localizar() async{
+ position = await  Geolocator().getCurrentPosition(
+
+      desiredAccuracy: LocationAccuracy.high
+  );
+
+ setState(() {
+   camerapos =  CameraPosition(
+       target: LatLng(position.latitude, position.longitude)
+       ,zoom: 16
+       ,tilt: 0
+   );
+ });
+movimentar();
+}
+
+movimentar() async{
+
+  GoogleMapController googleMapController  = await _controller.future;
+  googleMapController.animateCamera(
+    CameraUpdate.newCameraPosition(camerapos)
+
+  );
+}
+
+
+adicionarlistener(){
+  var geolocator = Geolocator();
+var locationOptions = LocationOptions(
+accuracy: LocationAccuracy.high,
+
+distanceFilter: 10
+);
+geolocator.getPositionStream(locationOptions).listen((Position position){
+  Marker marker2 = Marker(
+
+      markerId: MarkerId('marcadorr'),
+      position: LatLng(position.latitude, position.longitude)
+  );
+
+
+  setState(() {
+    marcadores.add(marker2);
+    camerapos =  CameraPosition(
+        target: LatLng(position.latitude, position.longitude)
+        ,zoom: 16
+        ,tilt: 0
+    );
+  });
+  recuperaendereco(position);
+
+    });
+
+}
+
+
+
+recuperaendereco(position) async {
+double lat=51.512876 ;
+double long = -0.088143;
+try{
+  lat = position.latitude;
+  long = position.longitude;
+}catch(e){
+  print("Erro " + "$e");
+}
+    List <Placemark> placemark = await Geolocator().placemarkFromCoordinates(
+        lat, long);
+print("AAAAAAAAAAA");
+    if (placemark != null && placemark.length > 0)
+      print(placemark[0].administrativeArea);
+
+}
+
+
+
+@override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+
+localizar();
+adicionarlistener();
+  }
+
+
+
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
 
+    return Scaffold(
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+
+floatingActionButton: FloatingActionButton(
+
+  child: Icon(
+    Icons.done
+  ),
+  onPressed: () async {
+GoogleMapController googleMapController= await _controller.future;
+googleMapController.animateCamera(CameraUpdate.newCameraPosition(
+  CameraPosition(target: LatLng(position.latitude, position.longitude)
+  ,zoom: 16
+,tilt: 0
+  )
+
+));
+  },
+),
       body: Container(
-        child: Center(
-          child: Text("Aqui ficará o mapa!"),
-        ),
-        color: Colors.white10,
+        
+       child: GoogleMap(
+         mapType: MapType.normal,
+         initialCameraPosition: camerapos,
+         onMapCreated: (controller){
+         _controller.complete(controller);
+
+         },
+         markers: marcadores
+       ),
       ),
 
     );

@@ -3,19 +3,19 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class QuestSintomas extends StatefulWidget {
+class QuestBarb extends StatefulWidget {
   @override
-  _QuestSintomasState createState() => _QuestSintomasState();
+  _QuestBarbState createState() => _QuestBarbState();
 }
 
-class _QuestSintomasState extends State<QuestSintomas> {
+class _QuestBarbState extends State<QuestBarb> {
   bool value1;
   bool value2;
   bool value3;
   bool value4;
   bool value5;
   bool value6;
-int valor;
+  int valor;
   @override
   void initState() {
     // TODO: implement initState
@@ -34,7 +34,7 @@ int valor;
     return Scaffold(
       backgroundColor: Colors.brown,
       appBar: AppBar(
-        title: Text("Questionário dos sintomas"),
+        title: Text("Questionário do barbeiro"),
         backgroundColor: Colors.red,
       ),
       body: Body(),
@@ -45,8 +45,8 @@ int valor;
   Body(){
     return SingleChildScrollView(
       child: Container(
-        padding: EdgeInsets.only(bottom:20),
         margin: EdgeInsets.all(20),
+        padding: EdgeInsets.only(bottom:40),
         color: Colors.white,
         child: Container(
           child: Column(
@@ -55,29 +55,33 @@ int valor;
                 padding: EdgeInsets.all(20),
 
                 color: Colors.yellow,
-                child: Text("Marque os sintomas que você possui para analisar se pode ter ou não a doença de Chagas", style:
-                  TextStyle(
+                child: Text("Marque as característica do inseto para analisar a probabilidade dele ser um barbeiro", style:
+                TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 17
-                  ),),
+                ),),
               ),
               Container(
                   padding: EdgeInsets.all(10),
-                  child: Text("*OBS: A análise a seguir não substitui um exame clínico e serve apenas como orientação, "
-                      "para mais informações, procure o hospital mais próximo.", style: TextStyle(
-                    fontWeight: FontWeight.bold
-                  ),)),
-             checkbox("Febre prolongada", value1, (value){
-               setState(() {
-                 value1 = value;
-               });
-             }),
-              checkbox("Dor de cabeça", value2,(value){
+                  child: Text("*OBS: A análise a seguir não tem como ser 100% correta, "
+                      "e de todo modo, é melhor contactar o laboratório para uma confirmação",style: TextStyle(
+                      fontWeight: FontWeight.bold
+                  ))),
+              SizedBox(
+                height: 15,
+              ),
+              checkbox("É marrom", value1, (value){
+                setState(() {
+                  value1 = value;
+                });
+              }),
+
+              checkbox("Mais coisas aqui", value2,(value){
                 setState(() {
                   value2 = value;
                 });
               }),
-              checkbox("Fraqueza intensa", value3,(value){
+              checkbox("Etc", value3,(value){
                 setState(() {
                   value3 = value;
                 });
@@ -108,7 +112,7 @@ int valor;
                 height: 70,
                 decoration: BoxDecoration(
 
-                  borderRadius: BorderRadius.circular(20)
+                    borderRadius: BorderRadius.circular(20)
                 ),
 
                 child: RaisedButton(
@@ -118,13 +122,13 @@ int valor;
 
                     showDialog(context: context, builder: (context){
                       return AlertDialog(
-                        title: Text("Há ${(valor*(100/6)).round()}% de chance de você ter a doença"),
-content: Text("Procure o hospital mais próximo se achar necessário"),
+                        title: Text("Há ${(valor*16.6).round()}% de chance de você ter a doença"),
+                        content: Text("Procure o hospital mais próximo se achar necessário"),
                         actions: <Widget>[
                           FlatButton(
                             child: Text("Ok"),
                             onPressed: (){
-                                Navigator.pop(context);
+                              Navigator.pop(context);
                             },
                           )
                         ],
@@ -132,10 +136,9 @@ content: Text("Procure o hospital mais próximo se achar necessário"),
                     });
 
                   },
-
                   child: Text("Analisar", style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold
                   ),),
 
                 ),
@@ -154,17 +157,17 @@ content: Text("Procure o hospital mais próximo se achar necessário"),
 
       title:Text(text,style: TextStyle(
           color: Colors.red,
-        fontWeight: FontWeight.bold
+          fontWeight: FontWeight.bold
       ),),
       value: values,
       activeColor: Colors.blue,
       onChanged:(bool newValue){
         func(newValue);
-setState(() {
-newValue?valor+=1:valor-=1;
+        setState(() {
+          newValue ? valor++: valor--;
 
-});
-print("Valor: $valor");
+        });
+        print("Valor: $valor");
       },
 
       controlAffinity: ListTileControlAffinity.leading,
