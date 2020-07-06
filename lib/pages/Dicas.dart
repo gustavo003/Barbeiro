@@ -47,12 +47,12 @@ decoration: BoxDecoration(
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
-                                Elemento('images/pato.jpg', "Precauções", (){
+                                Elemento('images/prec.jpeg', "Precauções", (){
                                   Navigator.push(context, MaterialPageRoute(builder: (context){
                                     return Prec();
                                   }));
                                 }, x:1),
-                                Elemento('images/cachorro.jpg', "Primeiros \nsocorros",(){
+                                Elemento('images/primeiros.jpeg', "Primeiros \nsocorros",(){
                                   Navigator.push(context, MaterialPageRoute(builder: (context){
                                     return Socorros();
                                   }));
@@ -61,12 +61,12 @@ decoration: BoxDecoration(
                             ),  Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
-                                Elemento('images/gaivota.jpg', "Emergência",(){
+                                Elemento('images/emergencia.jpeg', "Emergência",(){
                                   Navigator.push(context, MaterialPageRoute(builder: (context){
                                     return Emergencia();
                                   }));
                                 },),
-                                Elemento('images/gato.jpg', "Sintomas", (){
+                                Elemento('images/sintomas.jpeg', "Sintomas", (){
                                   Navigator.push(context, MaterialPageRoute(builder: (context){
                                     return Sintomas();
                                   }));
@@ -166,7 +166,7 @@ borderRadius: BorderRadius.circular(20),
           decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  fit: BoxFit.fill,
+                  fit: BoxFit.fitHeight,
                   image: AssetImage(imagem)
                 )
               ),

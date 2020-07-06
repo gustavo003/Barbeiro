@@ -35,13 +35,8 @@ class Socorros extends StatelessWidget {
               ),),
             ),
             SizedBox(height: 20),
-            Text("Um ano faz agora que os primeiros jacintos me destes, chamavam-me a menina dos jacintos"),
-            SizedBox(height: 20),
-            Image.asset("images/pedrinho.jpg", width: 300, height: 300,),
-            SizedBox(height: 20),
-            Text("Poi s'ascose nel foco che gli affina"),
-            SizedBox(height: 20),
-            Image.asset("images/pato.jpg", width: 300, height: 300,),
+            Text("Aqui teremos o conteúdo da tela de Primeiros socorros"),
+
 
           ],
         ),

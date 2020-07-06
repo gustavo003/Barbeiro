@@ -109,7 +109,31 @@ backgroundColor: Colors.black,
 
       ),
 drawer: Drawer(
+child: ListView(
+  children: <Widget>[
+    UserAccountsDrawerHeader(
+      accountName: Text("Olá Gustavo"),
+      accountEmail: Text("usuario@gmail.com"),
 
+      currentAccountPicture: CircleAvatar(
+
+      ),
+
+    )
+    ,ListTile(
+      title: Text("Contato"),
+      subtitle: Text("Contactar o laboratório"),
+      trailing: Icon(Icons.arrow_forward),
+      leading: Icon(Icons.contacts),
+    ),
+        ListTile(
+        title: Text("Sobre"),
+    subtitle: Text("Informações sobre o aplicativo"),
+    trailing: Icon(Icons.arrow_forward),
+    leading: Icon(Icons.info),
+    )
+  ],
+),
 ),
       body: children[index]
         ,
@@ -136,7 +160,7 @@ class _MapaState extends State<Mapa> {
 Set<Marker> marcadores = {};
 Position position;
 
-
+String lugar;
 CameraPosition camerapos =  CameraPosition(target: LatLng(-23.562436, 24.462436)
     ,
   zoom: 19,);
@@ -176,14 +200,16 @@ localizar() async{
 
       desiredAccuracy: LocationAccuracy.high
   );
-
- setState(() {
-   camerapos =  CameraPosition(
-       target: LatLng(position.latitude, position.longitude)
-       ,zoom: 16
-       ,tilt: 0
-   );
- });
+ if(mounted) {
+   setState(() {
+     camerapos =  CameraPosition(
+         target: LatLng(position.latitude, position.longitude)
+         ,zoom: 16
+         ,tilt: 0
+     );
+   });
+   }
+recuperaendereco();
 movimentar();
 }
 
@@ -194,6 +220,8 @@ movimentar() async{
     CameraUpdate.newCameraPosition(camerapos)
 
   );
+
+
 }
 
 
@@ -211,24 +239,24 @@ geolocator.getPositionStream(locationOptions).listen((Position position){
       position: LatLng(position.latitude, position.longitude)
   );
 
-
+if (mounted) {
   setState(() {
     marcadores.add(marker2);
-    camerapos =  CameraPosition(
+    camerapos = CameraPosition(
         target: LatLng(position.latitude, position.longitude)
-        ,zoom: 16
-        ,tilt: 0
+        , zoom: 16
+        , tilt: 0
     );
   });
-  recuperaendereco(position);
 
+}
     });
 
 }
 
 
 
-recuperaendereco(position) async {
+recuperaendereco() async {
 double lat=51.512876 ;
 double long = -0.088143;
 try{
@@ -237,12 +265,16 @@ try{
 }catch(e){
   print("Erro " + "$e");
 }
-    List <Placemark> placemark = await Geolocator().placemarkFromCoordinates(
-        lat, long);
-print("AAAAAAAAAAA");
-    if (placemark != null && placemark.length > 0)
-      print(placemark[0].administrativeArea);
+if(mounted) {
 
+  List <Placemark> placemark = await Geolocator().placemarkFromCoordinates(
+      lat, long);
+  print("AAAAAAAAAAA");
+  if (placemark != null && placemark.length > 0)
+    setState(() {
+      lugar = placemark[0].administrativeArea;
+    });
+}
 }
 
 
@@ -252,7 +284,7 @@ print("AAAAAAAAAAA");
     // TODO: implement initState
     super.initState();
 
-
+lugar = "";
 localizar();
 adicionarlistener();
   }
@@ -284,14 +316,35 @@ googleMapController.animateCamera(CameraUpdate.newCameraPosition(
 ),
       body: Container(
         
-       child: GoogleMap(
-         mapType: MapType.normal,
-         initialCameraPosition: camerapos,
-         onMapCreated: (controller){
-         _controller.complete(controller);
+       child: Stack(
+         children: <Widget>[
 
-         },
-         markers: marcadores
+           GoogleMap(
+             mapType: MapType.normal,
+             initialCameraPosition: camerapos,
+             onMapCreated: (controller){
+             _controller.complete(controller);
+
+             },
+             markers: marcadores
+           ),
+           Container(
+             width: double.infinity,
+             color:Colors.yellow,
+             height: 60,
+             margin: EdgeInsets.symmetric(horizontal: 100),
+             child: Center(
+               child: Text(
+                 '$lugar',
+
+style: TextStyle(
+  fontSize: 20,
+  fontWeight: FontWeight.bold
+),
+               ),
+             ),
+           )
+         ],
        ),
       ),
 

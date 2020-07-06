@@ -30,7 +30,7 @@ class Detalhes extends StatelessWidget {
               children: <Widget>[
                 Row(
                   children: <Widget>[
-                    Elemento("images/pedrinho.jpg", "Mini-atlas do barbeiro", (){
+                    Elemento("images/barbeiross.jpeg", "Mini-atlas do barbeiro", (){
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>
 
                             Atlas()));
