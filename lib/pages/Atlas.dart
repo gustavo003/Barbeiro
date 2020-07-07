@@ -9,7 +9,8 @@ class Atlas extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Mini-Atlas"),
-
+        backgroundColor: Color.fromRGBO(110, 95, 12, 1),
+        centerTitle: true,
       ),
       body: Body(context),
 
@@ -22,7 +23,7 @@ class Atlas extends StatelessWidget {
     var barbeiros = Barbeiros();
 
     return Container(
-      color: Colors.brown,
+      color: Colors.white,
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20)
@@ -46,7 +47,7 @@ class Atlas extends StatelessWidget {
 
 
 Container(
-  color: Colors.grey,
+  color: Colors.grey[500],
   child: Column(
     children: <Widget>[
       Especie(barbeiros[0]["nome"], barbeiros[0]["latim"], barbeiros[1]["nome"], barbeiros[1]["latim"], (){

@@ -22,7 +22,7 @@ class Dicas extends StatelessWidget {
         return Container(
 
           decoration: BoxDecoration(
-           color: Colors.brown
+           color: Color.fromRGBO(255, 251, 250, 1)
 ,
           ),
           child: Center(
@@ -47,7 +47,7 @@ decoration: BoxDecoration(
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
-                                Elemento('images/prec.jpeg', "Precauções", (){
+                                Elemento('images/prec.jpg', "Precauções", (){
                                   Navigator.push(context, MaterialPageRoute(builder: (context){
                                     return Prec();
                                   }));
@@ -154,7 +154,7 @@ onTap: func,
           width: 180,
           decoration: BoxDecoration(
 borderRadius: BorderRadius.circular(20),
-              color: Colors.white70
+              color: Color.fromRGBO(170, 160, 111, 1)
 
           ),
 

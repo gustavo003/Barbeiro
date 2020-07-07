@@ -5,6 +5,7 @@ import 'package:barbeiro/pages/Formulario.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import './Dicas.dart';
+import 'Contato.dart';
 import 'Detalhes.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'dart:async';
@@ -101,9 +102,10 @@ backgroundColor: Colors.black,
         ],
       ),
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        backgroundColor: Color.fromRGBO(110, 95, 12, 1),
+        centerTitle: true,
         title: Text(titles[index], style: TextStyle(
-            color: Colors.black,
+            color: Colors.white,
             fontWeight: FontWeight.bold
         ),),
 
@@ -125,6 +127,9 @@ child: ListView(
       subtitle: Text("Contactar o laboratório"),
       trailing: Icon(Icons.arrow_forward),
       leading: Icon(Icons.contacts),
+      onTap: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>Contato()));
+      },
     ),
         ListTile(
         title: Text("Sobre"),

@@ -19,7 +19,6 @@ class Info extends StatelessWidget {
   }
 
   Body(barbeiro){
-    print(barbeiro["Diagnose"]);
     return SingleChildScrollView(
       child: Container(
         color: Colors.brown,

@@ -2,7 +2,7 @@ Barbeiros(){
 
   final barbeiros = [
     {"nome":"images/alberprosenia_malheroi.jpeg",
-    "latim":"Alberprosenia Malheroi",
+    "latim":"Alberprosenia malheroi",
       "Diagnose":"Cabeça, incluindo olhos, "
   "tão longa quanto larga, muito pouco alongada à frente dos olhos; antenas inseridas "
   "afastadas do ápice da cabeça; ocelos situados em nítidas saliências do disco na "
@@ -28,7 +28,7 @@ Barbeiros(){
     },
     {
       "nome":"images/cavernicola_lenti.jpg",
-      "latim":"Cavernicola Lenti",
+      "latim":"Cavernicola lenti",
       "Diagnose":"Cabeça globosa em vista dorsal; processo "
     "do escutelo maior que o corpo do escutelo, "
     "cilíndrico, paralelo à superfície do corpo; conexivo "
@@ -41,7 +41,7 @@ Barbeiros(){
     },
     {
       "nome":"images/cavernicola_pilosa.jpg",
-      "latim":"Cavernicola Pilosa",
+      "latim":"Cavernicola pilosa",
       "Diagnose":"Cabeça fusiforme em vista dorsal; processo "
     "apical do escutelo muito pequeno, dirigido para "
     "cima; conexivo com todos os segmentos da mesma "
