@@ -9,89 +9,111 @@ class Info extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.brown,
+      backgroundColor: Colors.white,
+
       appBar: AppBar(
-        title: Text("Informações"),
-        backgroundColor: Colors.red,
+        title: Text(barbeiro["latim"]),
+        backgroundColor: Color.fromRGBO(110, 95, 12, 1),
+
       ),
-      body: Body(barbeiro),
+      body: Body(barbeiro) ,
     );
   }
 
+
+
+
   Body(barbeiro){
-    return SingleChildScrollView(
-      child: Container(
-        color: Colors.brown,
-        child: Container(
-padding: EdgeInsets.only(bottom: 20),
-          margin: EdgeInsets.all(30),
-  decoration: BoxDecoration(
+    return Container(
+      margin: EdgeInsets.only(left:25, right: 25, top: 15, bottom:15),
 
-        borderRadius: BorderRadius.circular(20),
-        color: Colors.white
-  ),
-child: Column(
+      child: ListView(
+        children: <Widget>[
+          Center(
+            child: Image.asset(barbeiro["nome"], width: 250, height: 250,),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 15),
+
+            width: double.infinity,
+            height: 130,
+            padding: EdgeInsets.only(left:20, top:20, right: 10),
+            decoration: BoxDecoration(
+                color: Color.fromRGBO(224,224,224, 1),
+
+                borderRadius: BorderRadius.circular(20)
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+
+Text(barbeiro["latim"], style: TextStyle(
+  fontSize: 16,
+  fontWeight: FontWeight.bold
+),),
+                SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+Column(
   children: <Widget>[
-      Container(
-        child: Center(
-          child: Text(barbeiro["latim"], style: TextStyle(
-            fontStyle: FontStyle.italic,
-            fontWeight: FontWeight.bold,
-            fontSize: 16
-          ),),
-        ),
-        margin: EdgeInsets.all(10),
-        decoration: BoxDecoration(
-
-            borderRadius: BorderRadius.circular(20),
-            color: Colors.yellow
-        ),
-        height: 60,
-      ),
-        Image.asset(barbeiro["nome"], width: 250, height: 150,),
-       ListTile(
-        leading: new MyBullet(),
-        title: new Text('Diagnose', style: TextStyle(
-          color: Colors.red
-        ),),
-      ),
-      Container(
-          padding: EdgeInsets.only(left:20, right: 20),
-          child: Text(barbeiro["Diagnose"], style: TextStyle(
-            fontSize: 15
-          ),))
-
-,
-      ListTile(
-      leading: new MyBullet(),
-      title: new Text('Tamanho(mm)', style: TextStyle(
-          color: Colors.red
-      )),
-      ),
-    Container(
-        padding: EdgeInsets.only(left:20, right: 20),
-        child: Text(barbeiro["Tamanho"], style: TextStyle(
-            fontSize: 15
-        ),))
-,
-    ListTile(
-        leading: new MyBullet(),
-        title: new Text('Habitat', style: TextStyle(
-            color: Colors.red
-        )),
-      ),
-    Container(
-        padding: EdgeInsets.only(left:20, right: 20),
-        child: Text(barbeiro["Habitat"], style: TextStyle(
-            fontSize: 15
-        ),))
-,
-
+      Text("TAMANHO(mm)", style: TextStyle(
+        color: Color.fromRGBO(177,177,177, 1),
+        fontWeight: FontWeight.bold
+      ),),
+      SizedBox(height: 10,),
+      Text(barbeiro["Tamanho"])
 
   ],
 ),
 
-        ),
+                  ],
+                ),
+
+              ],
+            ),
+          ),
+          SizedBox(height: 15),
+          Text("Descrição", style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+            color: Color.fromRGBO(177,177,177, 1),
+
+          ),),
+          Container(
+              margin: EdgeInsets.only(top:10),
+              child: Text(barbeiro['Diagnose'])),
+          Container(
+            margin: EdgeInsets.only(top:15),
+
+            child: Text("Habitat", style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              color: Color.fromRGBO(177,177,177, 1),
+
+            ),),
+          ),
+          Container(
+              margin: EdgeInsets.only(top:15, bottom:20),
+              child: Text(barbeiro['Habitat'])),
+    barbeiro['Regiao']=="null"?Container():
+          Container(
+            margin: EdgeInsets.only(top:15),
+
+            child: Text("Região endêmica", style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              color: Color.fromRGBO(177,177,177, 1),
+
+            ),),
+          ),
+          barbeiro['Regiao']=="null"?Container():
+
+          Container(
+              margin: EdgeInsets.only(top:15, bottom:20),
+              child: Text(barbeiro['Regiao']))
+
+        ],
       ),
     );
   }
@@ -111,3 +133,6 @@ class MyBullet extends StatelessWidget{
     );
   }
 }
+
+
+

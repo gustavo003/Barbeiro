@@ -9,7 +9,7 @@ Barbeiros(){
   "região pós-ocular da cabeça; clavo com mancha amarela alongada; conexivo negro sem manchas.",
       "Tamanho":"7,9 – 8,3",
       "Habitat": "Silvestre (ocos de palmeiras junto a morcegos e ninhos de pica-pau).",
-
+"Regiao":"null"
 
     },
     {
@@ -23,6 +23,7 @@ Barbeiros(){
           "segundo; conexivo com crista lateral.",
       "Tamanho":"9,5 – 9,4",
       "Habitat": "desconhecido.",
+      "Regiao":"null"
 
 
     },
@@ -36,6 +37,7 @@ Barbeiros(){
       "Tamanho":"9,5 – 12,0",
       "Habitat": "Silvestre (árvores - associados a E. "
           "mucronatus; roedores e morcegos).",
+      "Regiao":"null"
 
 
     },
@@ -48,6 +50,7 @@ Barbeiros(){
           "cor.",
       "Tamanho":"11 – 13,8",
       "Habitat": "Silvestre (ocos de árvores e outros refúgios)",
+      "Regiao":"null"
 
 
     },
@@ -61,6 +64,7 @@ Barbeiros(){
       "Tamanho":"23 – 29",
       "Habitat": "Silvestre (cavernas, árvores ocas e palmeiras); "
           "ocasionalmente peridomicílio e domicílio",
+      "Regiao":"null"
 
 
     },
@@ -72,6 +76,7 @@ Barbeiros(){
           "uniformemente escura.",
       "Tamanho":"7 – 8",
       "Habitat": "Silvestre (refúgios de roedores e marsupiais; bromélias).",
+      "Regiao":"null"
 
 
     },
@@ -83,13 +88,14 @@ Barbeiros(){
           "de claro e escuro.",
       "Tamanho":"7,5 – 8",
       "Habitat": "Silvestre (árvores, palmeiras, ninhos, e entre folhas).",
+      "Regiao":"null"
 
 
     },
     {
       "nome":"images/panstrongylus_diasi.jpg",
       "latim":"Panstrongylus diasi",
-      "Diagnose":"Rostro com segundo segmento mais longo"
+      "Diagnose":"Rostro com segundo segmento mais longo "
     "que o primeiro; lobo anterior do pronoto com marcas "
     "escuras, ângulo anterolateral muito curto e tubérculo "
     "discal obsoleto ou ausente; processo do escutelo "
@@ -99,7 +105,7 @@ Barbeiros(){
     " medianos com dois ou três espinhos cada.",
       "Tamanho":"26 – 27",
       "Habitat": "Silvestre, peridomicílio e domicílio.",
-
+"Regiao":"Mato Grosso do Sul, Goiás, Tocantins, Maranhão, São Paulo, Minas Gerais, Espírito Santo e Bahia."
 
     },
     {
@@ -112,7 +118,7 @@ Barbeiros(){
           "pretas.",
       "Tamanho":"22 – 29,5",
       "Habitat": "Silvestre, peridomicílio e domicílio.",
-
+"Regiao": "Acre, Amazonas, Roraima, Rondônia, Pará, Amapá, Tocantins, Mato Grosso, Goiás, Mato Grosso do Sul, Maranhão, Piauí, Ceará, Bahia, Minas Gerais, Espírito Santo, Rio de Janeiro, São Paulo e Paraná."
 
     },
     {
@@ -128,7 +134,7 @@ Barbeiros(){
   " medianos com mais de três espinhos cada.",
       "Tamanho":"22 – 27",
       "Habitat": "Silvestre, peridomicílio e domicílio.",
-
+"Regio":"null"
 
     },
 
@@ -141,7 +147,7 @@ Barbeiros(){
       "Tamanho":"19",
       "Habitat": "Silvestre (área de cerrado, arbustiva, seca)..",
 
-
+"Regiao":"Goias e Bahia"
     },
     {
       "nome":"images/panstrongylus_lignarius.jpg",
@@ -158,7 +164,7 @@ Barbeiros(){
       "Habitat": "Silvestre (palmeiras, ocos e copas de árvores, "
     "ninhos de tucanos, e bromélias), peridomicílio "
           "(galinheiros) e domicílio ocasionalmente.",
-
+"Regiao":"Amazonas, Pará, Tocantins e Maranhão."
 
     },
 
@@ -174,9 +180,9 @@ Barbeiros(){
     "quanto a membrana, com a base e o ápice mais "
     "claros; fêmures anteriores e medianos com espinhos.",
       "Tamanho":"24 – 29",
-      "Habitat": "silvestre (tocas de tatus, rochas habitadas por "
+      "Habitat": "Silvestre (tocas de tatus, rochas habitadas por "
           "mocós), peridomicílio (galinheiros) e domicílio.",
-
+"Regiao":"Minas Gerais, Bahia, Sergipe, Alagoas, Pernambuco, Paraíba, Rio Grande do Norte, Ceará e Piaui"
 
     },
 
@@ -193,6 +199,7 @@ Barbeiros(){
       "Tamanho":"26 – 38",
       "Habitat": "silvestre (palmeiras, tocas de animais), "
           "peridomicílio e domicílio.",
+      "Regiao":"Rio Grande do Sul, Santa Catarina, Paraná, São Paulo, Rio de Janeiro, Minas Gerais, Espírito Santo, Bahia, Sergipe, Alagoas, Pernambuco, Paraíba, Rio Grande do Norte, Ceará, Piauí, Maranhão, Tocantins, Mato Grosso do Sul, Goiás, Mato Grosso e Pará."
 
     },
     {
@@ -209,8 +216,7 @@ Barbeiros(){
       "Habitat": "Silvestre (palmeiras, árvores e refúgio de "
     "mamíferos), eventualmente em peridomicílio e "
           "domicílio.",
-
-
+"Regiao":"Amazonas, Pará e Matro Grosso"
     },
     {
       "nome":"images/panstrongylus_tupynambai.jpg",
@@ -224,6 +230,7 @@ Barbeiros(){
       "Habitat": "silvestre (pedregais, refúgios de roedores e "
     "répteis), ocasionalmente em peridomicílio e "
           "domicílio.",
+      "Regiao":"null"
 
 
     },
@@ -236,6 +243,7 @@ Barbeiros(){
       "Tamanho":"9 – 10",
       "Habitat": "silvestre (palmeiras e associados a refúgios de "
           "marsupiais).",
+      "Regiao":"null"
 
 
     },
@@ -251,6 +259,7 @@ Barbeiros(){
     "ninhos de roedores associada com Triatoma "
           "tibiamaculata e Rhodnius domesticus).",
 
+      "Regiao":"null"
 
     },
 
@@ -265,6 +274,7 @@ Barbeiros(){
 
       "Tamanho":"12 – 15",
       "Habitat": "Silvestre (ninho de aves; sob casca de árvores).",
+      "Regiao":"null"
 
 
     },
@@ -280,6 +290,7 @@ Barbeiros(){
 
       "Tamanho":"11,5 – 13,5",
       "Habitat": "Silvestre (ninho de aves).",
+      "Regiao":"null"
 
 
     },
@@ -296,6 +307,7 @@ Barbeiros(){
       "Tamanho":"16,5 – 17",
       "Habitat": "desconhecido.",
 
+      "Regiao":"null"
 
     },
 
@@ -314,7 +326,7 @@ Barbeiros(){
 
       "Tamanho":"19 – 20",
       "Habitat": "Silvestre (paineiras).",
-
+"Regiao":"Amazonas"
 
     },
 
@@ -333,8 +345,7 @@ Barbeiros(){
       "Tamanho":"15 – 18",
       "Habitat": "Silvestre (bromélias, refúgios de roedores e "
           "marsupiais, ocos de árvores, e embaixo de cascas)",
-
-
+      "Regiao":'Bahia, Minas Gerais, Espírito Santo, Rio de janeiro, São Paulo, Santa Catarina, Paraná'
     },
 
 
@@ -352,7 +363,7 @@ Barbeiros(){
 
       "Tamanho":"20",
       "Habitat": "Silvestre (palmeiras).",
-
+"Regiao":"Pará"
 
     },
 
@@ -377,7 +388,7 @@ Barbeiros(){
       "Tamanho":"20",
       "Habitat": "Silvestre (palmeiras)",
 
-
+"Regiao":"null"
     },
 
 
@@ -403,7 +414,7 @@ Barbeiros(){
       "Habitat": "Silvestre, peridomicílio "
           "eventualmente em domicílios. e (galinheiros) ",
 
-
+"Regiao":"Maranhão, Piauí, Ceará, Rio grande do norte, Paraíba, Pernambuco, Bahia"
     },
 
     {
@@ -426,8 +437,8 @@ Barbeiros(){
     "bem delimitadas.",
 
       "Tamanho":"17,5 – 20,50",
-      "Habitat": "predominantemente silvestre (palmeiras e ninhos), peridomicílio e domicílio. ",
-
+      "Habitat": "Predominantemente silvestre (palmeiras e ninhos), peridomicílio e domicílio. ",
+"Regiao":"Paraná, Mato Grosso do Sul, Goiás, Mato Grosso, Tocantins, Maranhão, Piauí, São Paulo, Minas Gerais, Bahia, Pernambuco, Rio Grande do Norte e Paraíba."
 
     },
 
@@ -440,7 +451,7 @@ Barbeiros(){
 
       "Tamanho":"10,5 – 12",
       "Habitat": "Silvestre (refúgio de roedores). ",
-
+"Regiao":"Esse é o próximo"
 
     },
 

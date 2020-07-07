@@ -1,14 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:photo_view/photo_view.dart';
 
 class Epidemologia extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.brown,
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("Ciclo biológico"),
-        backgroundColor: Colors.red,
+        title: Text("Epidemologia"),
+        backgroundColor: Color.fromRGBO(110, 95, 12, 1),
 
       ),
       body: Body(),
@@ -18,33 +19,64 @@ class Epidemologia extends StatelessWidget {
 
   Body(){
     return Container(
-      margin: EdgeInsets.only(left:15, right:15, top:50, bottom:20),
+      padding: EdgeInsets.only(left:20, right: 20, top: 35, bottom: 35),
+      margin: EdgeInsets.only(left:15, right: 15, top:25, bottom: 20),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        color: Colors.white,
+          borderRadius: BorderRadius.circular(20),
+          color: Color.fromRGBO(204,198,146,1)
+
       ),
-      child: Column(
+      child: ListView(
         children: <Widget>[
           Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              color: Colors.yellow,
-            ),
-            height: 80,
-            child: Center(
-              child: Text("Epidemologia", style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold
-              ),),
+            height: 100,
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Color.fromRGBO(157,84,65,1),
+
+              ),
+              child: Center(
+                child: Text("Epidemologia", style: TextStyle(
+                    color:Colors.white,
+                    fontWeight:FontWeight.bold,
+                    fontSize: 20
+                ),),
+              ),
             ),
           ),
+          SizedBox(
+            height: 20,
+          ),
           Container(
-            padding: EdgeInsets.only(top:40, left:20, right:20),
-            child: Text(
-                "Aqui teremos o conteúdo referente a epidemologia"
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20)
             ),
-          )
+              height: 340,
 
+              child: PhotoView(
+
+                imageProvider: AssetImage("images/mapa.jpeg"),
+              )
+          ),
+          Container(
+            height: 60,
+            margin: EdgeInsets.only(top:30),
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Color.fromRGBO(157,84,65,1),
+
+              ),
+              child: Center(
+                child: Text("+ Informações", style: TextStyle(
+                    color:Colors.white,
+                    fontWeight:FontWeight.bold,
+                    fontSize: 20
+                ),),
+              ),
+            ),
+          ),
         ],
       ),
     );
