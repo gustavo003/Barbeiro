@@ -28,26 +28,14 @@ class Atlas extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20)
         ),
-        margin: EdgeInsets.only(left:12,right:12, top: 40),
 
         child: ListView(
           children: <Widget>[
-            Container(
-              color: Colors.yellow,
-              height: 60,
-              width: double.infinity,
-              child: Center(
-
-                  child: Text("Mini-Atlas do barbeiro", style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold
-              ),)),
-            ),
+    SizedBox(height: 50,),
 
 
 
 Container(
-  color: Colors.grey[500],
   child: Column(
     children: <Widget>[
       Especie(barbeiros[0]["nome"], barbeiros[0]["latim"], barbeiros[1]["nome"], barbeiros[1]["latim"], (){
@@ -229,8 +217,7 @@ Container(
                       onTap: func,
                       child: Container(
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Colors.white,
+                          border: Border.all(color: Color.fromRGBO(224,224,224, 1), width: 3),
 
                         ),
                         height: 180,
@@ -239,7 +226,11 @@ padding: EdgeInsets.only(top:10),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
-                           Image.asset(image, width: 100, height: 100,),
+                           Container(
+decoration: BoxDecoration(
+
+),
+                      child: Image.asset(image, width: 100, height: 100,)),
 
                             Center(
                                 child: Container(
@@ -247,7 +238,7 @@ padding: EdgeInsets.only(top:10),
                                     child: Text(text, style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontStyle: FontStyle.italic,
-                                      color: Colors.red
+                                      color: Colors.black
                                     ),)))
                           ],
                         )
@@ -259,8 +250,7 @@ padding: EdgeInsets.only(top:10),
                       onTap: func2,
                       child: Container(
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Colors.white,
+                            border: Border.all(color: Color.fromRGBO(224,224,224, 1), width: 3),
 
                           ),
                           height: 180,
@@ -269,7 +259,10 @@ padding: EdgeInsets.only(top:10),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: <Widget>[
-                              Image.asset(image2, width: 100, height: 100,),
+                              Container(
+                                  decoration: BoxDecoration(
+                                  ),
+                                  child: Image.asset(image2, width: 100, height: 100,)),
 
                               Center(
                                   child: Container(
@@ -277,7 +270,8 @@ padding: EdgeInsets.only(top:10),
                                       child: Text(text2, style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontStyle: FontStyle.italic,
-                                        color: Colors.red),)))
+                                        color: Colors.black),))),
+
                             ],
                           )
                       ),

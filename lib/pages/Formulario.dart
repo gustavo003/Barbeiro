@@ -9,7 +9,6 @@ class Formulario extends StatelessWidget {
 
     return Scaffold(
 
-
       body:Body(context)
     )
     ;
@@ -18,7 +17,7 @@ class Formulario extends StatelessWidget {
 
   Body(context){
     return Container(
-      color: Colors.brown,
+      color: Colors.white,
       width: double.infinity,
       child: Container(
         child: Column(
@@ -35,20 +34,29 @@ class Formulario extends StatelessWidget {
                 width: 250,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
-                  color: Colors.white,
+                    color: Color.fromRGBO(170, 160, 111, 1)
                 ),
                 child: Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
-
-                      Image.asset("images/pedrinho.jpg", width: 120, height: 120,),
+                      Container(
+                        width: 130,
+                        height: 130,
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                                fit: BoxFit.fitHeight,
+                                image: AssetImage('images/pedrinho.jpg')
+                            )
+                        ),
+                      ),
                       Container(
                         padding: EdgeInsets.only(bottom:20),
                         child: Text("Questionário dos sintomas", style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 15,
-                          color: Colors.red
+                          color: Colors.white
                         ),),
                       )
                     ],
@@ -68,7 +76,7 @@ class Formulario extends StatelessWidget {
                 width: 250,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
-                  color: Colors.white,
+                    color: Color.fromRGBO(170, 160, 111, 1)
 
                 ),
                child: Center(
@@ -76,13 +84,22 @@ class Formulario extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
 
-                        Image.asset("images/pedrinho.jpg", width: 120, height: 120,),
                         Container(
+                          width: 130,
+                          height: 130,
+                          decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                  fit: BoxFit.fitHeight,
+                                  image: AssetImage('images/pedrinho.jpg')
+                              )
+                          ),
+                        ),                        Container(
                           padding: EdgeInsets.only(bottom:20, left: 20, right: 20),
                           child: Text("Questionário de identificação do barbeiro", style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 14,
-                            color: Colors.red
+                            color: Colors.white
                           ),),
                         )
                       ],

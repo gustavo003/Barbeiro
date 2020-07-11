@@ -1,8 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-
+import 'package:flutter/src/painting/border_radius.dart';
 class QuestSintomas extends StatefulWidget {
   @override
   _QuestSintomasState createState() => _QuestSintomasState();
@@ -32,10 +31,10 @@ int valor;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.brown,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("Questionário dos sintomas"),
-        backgroundColor: Colors.red,
+        backgroundColor: Color.fromRGBO(110, 95, 12, 1),
       ),
       body: Body(),
     );
@@ -43,7 +42,182 @@ int valor;
   }
 
   Body(){
-    return SingleChildScrollView(
+    return Container(
+      child: ListView(
+
+        children: <Widget>[
+
+          Container(
+
+            margin: EdgeInsets.only(left:5, right: 5, top:4, bottom: 10),
+            padding: EdgeInsets.only(left:47, right:45, top:25, bottom:19),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+            color: Color.fromRGBO(114,115,117, 1)
+          ),
+          child: Text(
+            "  Este questionário não tem valor\ndiagnóstico. Caso apresente esses\nsintomas vá à unidade de Saúde mais\n                         próxima."
+                ,style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold
+          ),
+          ),
+          ),
+
+
+          Container(
+        margin: EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                      color: Color.fromRGBO(103,53,2, 1),
+
+                      borderRadius: BorderRadius.circular(20)
+                  ),
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        width: double.infinity,
+                    decoration: BoxDecoration(
+                        color:Color.fromRGBO  (178,152,127,1),
+
+                        borderRadius: BorderRadius.circular(4)
+                    )
+,child: Center(
+  child:   Text("Marque seus sintomas",style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),),
+),
+                        margin: EdgeInsets.all(20),
+                        padding: EdgeInsets.only(left:20, right: 20, bottom: 20, top: 10)
+                      ),
+                      SizedBox(height: 20,),
+
+
+                      checkbox("Febre prolongada", value1, (value){
+                        setState(() {
+                          value1 = value;
+                          value==true?valor++:valor--;
+
+                        });
+                      return null;
+                      }
+
+                      ),
+                      SizedBox(height: 20,),
+
+                      checkbox("Dor de cabeça", value2,(value){
+                        setState(() {
+                          value2 = value;
+                          value==true?valor++:valor--;
+
+                        });
+                        return null;
+
+                      }),
+                      SizedBox(height: 20,),
+
+                      checkbox("Fraqueza intensa", value3,(value){
+                        setState(() {
+                          value3 = value;
+                          value==true?valor++:valor--;
+
+                        });
+                        return null;
+
+                      }),
+                      SizedBox(height: 20,),
+
+                      checkbox("Inchaço do rosto e pernas", value4,(value){
+                        setState(() {
+                          value4 = value;
+                          value==true?valor++:valor--;
+
+                        });
+                        return null;
+
+                      }),
+                      SizedBox(height: 20,),
+
+                      checkbox("Problemas cardíacos, como\ninsuficiência cardíaca", value5,
+                              (value){
+                            setState(() {
+                              value5 = value;
+                              value==true?valor++:valor--;
+                            });
+                            return null;
+
+                              }),
+                      SizedBox(height: 20,),
+
+                      checkbox("Problemas digestivos, como\nmegacolon e megaesôfago.", value6,
+                              (value){
+                            setState(() {
+                              value6 = value;
+                              value==true?valor++:valor--;
+                              print(valor);
+
+                            });
+                            return null;
+
+                              }),
+                      SizedBox(
+                        height: 50,
+                      ),
+
+                    ]
+    ),
+
+             ),
+          Container(
+            width: 200,
+            height: 70,
+            margin: EdgeInsets.only(left:60, right: 60, top:6)
+,            decoration: BoxDecoration(
+
+                borderRadius: BorderRadius.circular(30)
+            ),
+
+            child: RaisedButton(
+              color: Colors.blue,
+
+              onPressed: (){
+
+                showDialog(context: context, builder: (context){
+                  return AlertDialog(
+                    title: Text("Há ${(valor*(100/6)).round()}% de chance de você ter a doença"),
+                    content: Text("Procure o hospital mais próximo se achar necessário"),
+                    actions: <Widget>[
+                      FlatButton(
+                        child: Text("Ok"),
+                        onPressed: (){
+                          Navigator.pop(context);
+                        },
+                      )
+                    ],
+                  );
+                });
+
+              },
+
+              child: Text("Analisar", style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold
+              ),),
+
+            ),
+          )
+,
+SizedBox(height: 30,)
+    ]
+          )
+        ,
+      );
+    
+
+  }
+
+  /*
+   SingleChildScrollView(
       child: Container(
         padding: EdgeInsets.only(bottom:20),
         margin: EdgeInsets.all(20),
@@ -145,31 +319,42 @@ content: Text("Procure o hospital mais próximo se achar necessário"),
         ),
       ),
     );
-
-  }
+   */
 
 
   checkbox(text, values, func){
-    return  CheckboxListTile(
+    return  Row(
+      children: <Widget>[
 
-      title:Text(text,style: TextStyle(
-          color: Colors.red,
-        fontWeight: FontWeight.bold
-      ),),
-      value: values,
-      activeColor: Colors.blue,
-      onChanged:(bool newValue){
-        func(newValue);
-setState(() {
-newValue?valor+=1:valor-=1;
+        Container(
+          margin: EdgeInsets.only(left:20, right: 20),
+          decoration: BoxDecoration(
+              border: Border.all(
+                  color: Colors.white,
+                  width: 4
+              ),
+          ),
+          width: 35,
+          height: 35,
+    child: Transform.scale(
+    scale:1.8,
+  child: Checkbox(
 
-});
-print("Valor: $valor");
-      },
+    value: values,
+    onChanged: func,
+    ),
+    )
 
-      controlAffinity: ListTileControlAffinity.leading,
+        ),
+        GestureDetector(
+          onTap:(){},
+          child: Text(text, style: TextStyle(
+            color: Colors.white,
+            fontSize: 15
+          ),),
+        )
+      ],
     );
-
   }
 
 }

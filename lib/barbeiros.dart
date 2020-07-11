@@ -134,7 +134,7 @@ Barbeiros(){
   " medianos com mais de três espinhos cada.",
       "Tamanho":"22 – 27",
       "Habitat": "Silvestre, peridomicílio e domicílio.",
-"Regio":"null"
+"Regiao":"null"
 
     },
 
@@ -451,7 +451,7 @@ Barbeiros(){
 
       "Tamanho":"10,5 – 12",
       "Habitat": "Silvestre (refúgio de roedores). ",
-"Regiao":"Esse é o próximo"
+"Regiao":"Amazonas e Pará"
 
     },
 
@@ -469,7 +469,7 @@ Barbeiros(){
       "Habitat": "silvestre (palmeiras e bromélias) e domicílio "
           "(invasor). ",
 
-
+"Regiao":"Amazonas, Roraima, Rondônia, Mato Grosso, Tocantins, Piauí, Maranhão, Pará e Amapá."
     },
 
     {
@@ -490,9 +490,9 @@ Barbeiros(){
 
       "Tamanho":"20 – 26",
       "Habitat": "silvestre (palmeiras), "
-          "eventualmente em domicílio. "
+          "eventualmente em domicílio. ",
 
-
+"Regiao":"Acre, Amazonas, Rondônia, Roraima, Pará, Amapá, Mato Grosso, Tocantins, Maranhão e Piauí."
 
     },
 
@@ -509,7 +509,7 @@ Barbeiros(){
 
       "Tamanho":"16,5 – 17",
       "Habitat": "Silvestre",
-
+'Regiao':"null"
 
     },
 
@@ -531,7 +531,7 @@ Barbeiros(){
       "Tamanho":"13",
       "Habitat": "desconhecido.",
 
-
+"Regiao":"null"
     },
 
 
@@ -550,7 +550,7 @@ Barbeiros(){
       "Habitat": "Silvestre (em pedras, associados a pequenos "
           "roedores).",
 
-
+"Regiao":"Minas Gerais"
     },
 
 
@@ -573,7 +573,7 @@ Barbeiros(){
 
       "Tamanho":"25",
       "Habitat": "Silvestre.",
-
+"Regiao":"Mato grosso do sul"
 
     },
 
@@ -590,7 +590,7 @@ Barbeiros(){
 
       "Tamanho":"22 – 25,5",
       "Habitat": "Silvestre, peridomicílio e domicílio.",
-
+"Regiao":"Goiás, Tocantins, Maranhão, Piauí, Ceará, Rio Grande do Norte, Paraíba, Pernambuco, Alagoas, Sergipe e Bahia."
 
     },
 
@@ -611,6 +611,8 @@ Barbeiros(){
 
       "Tamanho":"20 – 22",
       "Habitat": "Silvestre, peridomicílio e domicílio.",
+
+      "Regiao":'Rio grande do sul'
     },
 
     {
@@ -628,7 +630,7 @@ Barbeiros(){
     "de roedores), e ocasionalmente no peridomicílio e "
           "peridomicílio.",
 
-
+"Regiao":"Rio grande do sul"
     },
 
     {
@@ -645,7 +647,7 @@ Barbeiros(){
       "Tamanho":"25,5 – 26-,5",
       "Habitat": "silvestre (refúgio de roedores e pedras "
           "calcáreas), e ocasionalmente no peridomicílio",
-
+"Regiao":"Mato Grosso, Goiás, Tocantins e Bahia."
 
     },
 
@@ -663,7 +665,7 @@ Barbeiros(){
       "Tamanho":"25",
       "Habitat": "Domicílio.",
 
-
+"Regiao":"Mato Grosso e Goiás "
     },
 
 
@@ -685,7 +687,7 @@ Barbeiros(){
       "Habitat": "Silvestre (ninhos de aves habitados por "
     "marsupiais ou roedores), e ocasionalmente "
           "peridomicílio e domicílio.",
-
+"Regiao":"null"
 
     },
 

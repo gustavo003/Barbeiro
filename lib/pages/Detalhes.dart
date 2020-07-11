@@ -17,25 +17,26 @@ class Detalhes extends StatelessWidget {
 
   Body(context){
     return Container(
-      color: Colors.brown,
+      color: Colors.white,
       child: Container(
         margin: EdgeInsets.only(left:10, right: 10, top:20, bottom: 5),
         padding: EdgeInsets.only(top:80),
         
-        color: Colors.brown,
+        color: Colors.white,
         child: ListView(
           children: <Widget>[
 
             Column(
               children: <Widget>[
+                SizedBox(height: 30,),
                 Row(
                   children: <Widget>[
-                    Elemento("images/barbeiross.jpeg", "Mini-atlas do barbeiro", (){
+                    Elemento("images/barbeiross.jpeg", "Mini-atlas", (){
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>
 
                             Atlas()));
                     }),
-                    Elemento("images/pedrinho.jpg", "Ciclo biológico da doença de chagas", (){
+                    Elemento("images/pedrinho.jpg", "Ciclo biológico da doença de Chagas", (){
                       Navigator.push(context, MaterialPageRoute(builder: (context)=>
 
                           Ciclo_biologico()));
@@ -46,7 +47,7 @@ class Detalhes extends StatelessWidget {
                   ],
                 ),
                Center(
-                 child:  Elemento("images/pedrinho.jpg", "Epidemologia", (){
+                 child:  Elemento("images/pedrinho.jpg", "Epidemiologia", (){
                    Navigator.push(context, MaterialPageRoute(builder: (context)=>
 
                        Epidemologia()));
@@ -65,42 +66,59 @@ class Detalhes extends StatelessWidget {
   }
 
 
-  Elemento(imagem, String cont, func, {x}){
 
-    return GestureDetector(
-onTap: func,
-          child: Container(
-            height: 180,
-width: 180,
-margin: EdgeInsets.only(left: 10, right:0, bottom: 15),
 
-          
-              decoration: BoxDecoration(
-                  color: Colors.white,
+    Elemento(imagem, String cont, func, {x}){
 
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(color: Colors.red, width: 4)
-              ),
-              child: Column(
-                children: <Widget>[
-                  SizedBox(height: 10),
-                  Container(
+      return GestureDetector(
+        onTap: func,
+        child: Container(
 
-                      child: Image.asset(imagem, width: 100, height: 100,)),
-                  SizedBox(height: 10),
-                  Container(
-                      padding: EdgeInsets.only(left:18, right: 5),
-                      child: Text(cont, style: TextStyle(
-                        fontWeight: FontWeight.bold,
+          margin: EdgeInsets.only(left:5, right:5, top:x==null?0:25, bottom: x==null?15:10)
+          ,
+          padding: EdgeInsets.only(top:15),
+          height: 180,
 
-                      ),))
-                ],
-              ),
+          width: 180,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: Color.fromRGBO(170, 160, 111, 1)
 
           ),
-    );
 
-  }
+          child: Column(
+            children: <Widget>[
+              Container(
+                width: 100,
+                height: 100,
+                decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                        fit: BoxFit.fitHeight,
+                        image: AssetImage(imagem)
+                    )
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                margin: EdgeInsets.only(left:10, right: 10),
+                child: Center(
+                  child: Text(cont, style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15
+                  ),),
+                ),
+              )
+            ],
+          ),
+        ),
+      );
+
+
+    }
 
 
 }

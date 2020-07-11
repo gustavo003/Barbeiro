@@ -8,7 +8,7 @@ class Epidemologia extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("Epidemologia"),
+        title: Text("Epidemiologia"),
         backgroundColor: Color.fromRGBO(110, 95, 12, 1),
 
       ),
@@ -37,7 +37,7 @@ class Epidemologia extends StatelessWidget {
 
               ),
               child: Center(
-                child: Text("Epidemologia", style: TextStyle(
+                child: Text("Epidemiologia", style: TextStyle(
                     color:Colors.white,
                     fontWeight:FontWeight.bold,
                     fontSize: 20

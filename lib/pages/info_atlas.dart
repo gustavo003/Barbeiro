@@ -12,7 +12,9 @@ class Info extends StatelessWidget {
       backgroundColor: Colors.white,
 
       appBar: AppBar(
-        title: Text(barbeiro["latim"]),
+        title: Text(barbeiro["latim"], style: TextStyle(
+          fontStyle: FontStyle.italic
+        ),),
         backgroundColor: Color.fromRGBO(110, 95, 12, 1),
 
       ),
@@ -49,7 +51,8 @@ class Info extends StatelessWidget {
 
 Text(barbeiro["latim"], style: TextStyle(
   fontSize: 16,
-  fontWeight: FontWeight.bold
+  fontWeight: FontWeight.bold,
+  fontStyle: FontStyle.italic
 ),),
                 SizedBox(height: 20),
                 Row(
